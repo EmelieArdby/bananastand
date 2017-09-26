@@ -1,19 +1,19 @@
 const greet = () => {
 	console.log ('välkommen')
 	}
-	greet ()
+
 
 const counter = () => {
 	console.log ('115')
 }
-	counter ()
+
 
 const banana = '50'
 const spoon = '3'
 const counter1 = () => {
 	console.log (banana*2 + spoon*5)
 }
-	counter1 ()
+	
 
 const Banana2 = {
 	name: 'Bananasplit',
@@ -29,11 +29,27 @@ const Spoon2 = {
 const DescribeBanana2 = () => {
 	console.log (Banana2.name + Banana2.price)
 }
-DescribeBanana2 ()
 
 const DescribeSpoon2 = () => {
 	console.log (Spoon2.name + Spoon2.price)
 }
-DescribeSpoon2 ()
 
+
+const menu = [Banana2, Spoon2]
+menu[2] = { name: 'Glass', price: 10}
+
+const describeItem = (item) => {
+	console.log (item.name + item.price)
+}
+
+const describeMenu = () => {
+	describeItem(menu[0])
+}
+
+greet ()
+counter ()
+
+
+DescribeSpoon2 ()
+describeMenu ()
 
